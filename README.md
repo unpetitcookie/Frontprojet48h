@@ -1,10 +1,11 @@
-# Frontprojet48h
+# Documentation du projet
 
 ## Demande du Client:
 * Créer un réseau de boutiques fédérées indépendant des MarketPlaces et ainsi proposer à leurs clients partout en France le paiement et la livraison de leurs produits.
 
 ## Objectif:
 * Proposer une solution compatible que les commerçants pourront utiliser.
+* Permettre à tous les commerçants d'être visibles et trouvables par une clientèle plus large, tout en conservant la souveraineté de leur boutique en ligne et de leur modèle économique.
 
 ## Solutions:
 * Un réseau de serveurs (instances), décentralisé (qui ne dépendent pas d’une entité centrale)
@@ -20,21 +21,20 @@
     * Modifier un article deja exposé, par example: son prix, son image et sa description
     * Supprimer un article de sa boutique
 * Les clients pourront:
-    * Naviguer dans toutes les boutiques mises à disposition sur le réseau
+    * Parcourir les boutiques mises à disposition sur le réseau
     * Ajouter les produits qui les intéresse dans un panier
     * Annuler leur panier
-    * Payer leur Panier
+    * Payer leur panier en utilisant le mode de paiement choisis par l'administrateur
     * Supprimer un article de leur panier
-
 * La création d’un compte client sur une seule des instance permettra de:
     * Acheter des produits provenant de leur instance de manière classique
     * Passer commande chez les commerçants des autres instances depuis la leur; le paiement aura lieu sur l'autre instance mais une nouvelle inscription ne sera pas nécessaire.
 
 ## Mise en place:
-Développement d’un site web servira d'interface graphique pour les clients et les marchants ainsi que l'administrateur du serveur.
+Développement d’un site web servira d'interface graphique pour les clients et les marchands ainsi que l'administrateur du serveur.
 
 Une API par serveur permettra la communication entre les différentes instances et l’insertion d’un serveur dans le réseau.
-Utilisation d’une base de données pour stocker tous les enregistrements tels que les comptes clients et comptes marchant ainsi que les listes de tous les produits mis à disposition dans les boutiques.
+Utilisation d’une base de données pour stocker tous les enregistrements tels que les comptes clients et comptes marchand ainsi que les listes de tous les produits mis à disposition dans les boutiques.
 Mise en place d’une architecture réseau redondante afin d'éviter une perte irréversible des données.
 
 * Site Web:
