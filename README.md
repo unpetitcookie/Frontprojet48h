@@ -16,8 +16,13 @@
     * Passer commande chez les commerçants des autres instances depuis la leur; le paiement aura lieu sur l'autre instance mais une nouvelle inscription ne sera pas nécessaire.
 
 ## Mise en place:
-Développement d’un site web permettant aux marchands de disposer leurs produits et pour les clients de pouvoir naviguer dans toutes les boutiques mises à disposition sur le réseau.
-Une API par serveur pourra permettre la communication entre les différentes instances et l’insertion d’un serveur dans le réseau.
+Développement d’un site web servira d'interface graphique pour les clients et les marchants ainsi que l'administrateur du serveur.
+
+Les marchands pourront disposer leurs produits en leur ajoutant une description , une image et un prix. Ils pourront aussi modifier un article deja exposé, par example son pris son image et sa description ainsi que le supprimer de sa boutique s'il le souhaite.
+
+Les clients pourront naviguer dans toutes les boutiques mises à disposition sur le réseau et ajouter les produits qui les intéresse dans un panier, annuler le panier ou le valider en le payant.
+
+Une API par serveur permettra la communication entre les différentes instances et l’insertion d’un serveur dans le réseau.
 Utilisation d’une base de données pour stocker tous les enregistrements tels que les comptes clients et comptes marchant ainsi que les listes de tous les produits mis à disposition dans les boutiques.
 Mise en place d’une architecture réseau redondante afin d'éviter une perte irréversible des données.
 
