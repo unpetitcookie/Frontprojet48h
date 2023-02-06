@@ -8,45 +8,46 @@
     <title>AddProduct</title>
 </head>
 
-<body background="../assets/login-background.jpg">
-    <form method="post" id ="formulaire">
-         <!-- <div class="container">  
-            <h1>Ajouter un Produit:</h1>
-            <aside class="printimage">
-                <button<label for="avatar">Importer une image du produit:</button</label>
-                <input type="file"
-                id="avatar" name="avatar"
-                accept="image/png, image/jpeg">
-                
-            </aside>-->
-                
-                    <input type="text" placeholder= "Nom du Produit" name="Produit" id ="nameProduct"><br>
-                <div class="Descrition">
-                <textarea name="Descrition" placeholder="Descrition" rows="5" cols="30" id="Descrition"></textarea><br>
-                <div>
-                    <label for="productPrice">Prix :</label>
-                    <input type="number" placeholder="0" step="0.01" min="0"id="price">
-                </div>
-                <label>Tag:</label>
-                <input type="text" name="Tag" id="Tag"><br>
-                
-                
-                <input type="submit" value="Submit" />
+<body background="../login-background.jpg">
+    <div id="formContainer">
+        <h2>Ajouter un nouveau produit</h2>
+        <form method="post" id="formulaire">
+             <!-- <div class="container">
+                <h1>Ajouter un Produit:</h1>
+                <aside class="printimage">
+                    <button<label for="avatar">Importer une image du produit:</button</label>
+                    <input type="file"
+                    id="avatar" name="avatar"
+                    accept="image/png, image/jpeg">
+
+                </aside>-->
+            <label for="nameProduct">Nom du produit</label>
+            <input type="text" id="nameProduct"><br>
+            <label for="Description">Description</label>
+            <input type="text" id="Description"><br>
+            <label for="Price">Prix</label>
+            <input type="text" id="Price"><br>
+            <label for="Type">Type</label>
+            <input type="text" id="Type"><br>
+            <label for="Tags">Tags</label>
+            <input type="text" id="Tags"><br>
+            <input type="submit" value="Soumettre" id="button" />
+        </form>
     </div>
-    
-</form>
+
 <script>
     const form = document.getElementById("formulaire");
-    
+
     form.addEventListener("submit", function(event) {
         event.preventDefault();
-        
-        const nomDuProduit = document.getElementById("nameProduct").value;
-        const Description = document.getElementById("Descrition").value;
-        const price = document.getElementById("price").value;
-        const tag = document.getElementById("Tag").value;
-        
-        const data = { nomDuProduit, Description, price, tag };
+
+        const nameProduct = document.getElementById("nameProduct").value;
+        const Description = document.getElementById("Description").value;
+        const price = document.getElementById("Price").value;
+        const tag = document.getElementById("Tags").value;
+        const type = document.getElementById("Type").value;
+
+        const data = { nameProduct, Description, price, tag, type };
         
         console.log(data);
     });
