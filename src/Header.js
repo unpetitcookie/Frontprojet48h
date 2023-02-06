@@ -8,7 +8,7 @@ class Header extends React.Component {
             <section>
                 <div class="header">
                     <div class="header-left">
-                        <h1>Open-Octodon</h1>
+                        <h1 class="h1-header">Open-Octodon</h1>
                     </div>
                     <div class="header-right">
                         <a class="active" href="#home">Home</a>
