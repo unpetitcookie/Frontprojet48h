@@ -16,19 +16,19 @@ html{
 }
 
 #formContainer input{
-    display: flex;
-    width: 10rem;
-    border-radius: 12px;
-    height: 1.5rem;
-    border: 0;
+  display: flex;
+  width: 10rem;
+  height: 1.5rem;
+  
 }
 #formContainer input[type="submit"]{
-   margin-top: 7%;
+  margin-top: 7%;
+  border: 0;
 }
 
 #formContainer input[type="submit"]:hover{
-    transform: scale(1.1);
-    background-color: blue;
+    transform: scale(1.05);
+    background: linear-gradient(to right, #11998e, #38ef7d);
 }
 #formContainer h2{
     display: flex;
@@ -66,4 +66,57 @@ html{
         padding-bottom: 2rem;
         font-size: 25px;
     }
+}
+
+
+.form__group {
+  position: relative;
+  padding-top: 20px;
+}
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  outline: 0;
+  border-bottom: 3px solid #000;
+  font-size: 1.3rem;
+  color: #fff;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 10px;
+}
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #000;
+}
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: blue;
+  font-weight: 700;
+}
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
 }

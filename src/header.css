@@ -2,6 +2,21 @@
     margin: 0;
     padding: 0;
 }
+.header{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-right .login img{
+   padding: 10px 50px 10px 30px;
+}
 .h1-header{
     color: #000;
     padding: 20px 100px 20px 20px;
@@ -12,17 +27,18 @@ a{
     font-size: 20px;
     font-weight: 600;
 }
+.active{
+    padding-right: 100px;
+}
 a:hover{
     color: blue;
 }
-.header{
-    background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.header-right .login img{
-   padding: 10px 50px 10px 30px;
+input[type="text"]{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 0 10px;
 }
 /* réduire la taille du texte h1 qaund la taille de l'écran atteint 470px */
 @media screen and (max-width: 470px){

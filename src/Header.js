@@ -12,8 +12,11 @@ class Header extends React.Component {
                     </div>
                     <div class="header-right">
                         <a class="active" href="#home">Home</a>
+                        <form>
+                            <input type="text" name="search" placeholder="Search.."/>
+                        </form>
                         <a class="login" href="">
-                        <img src={perso}  />
+                        <img src={perso}/>
                         </a>
                     </div>
                 </div>
