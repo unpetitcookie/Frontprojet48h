@@ -27,3 +27,11 @@ Pour la partie Frontend du site web, elle sera faite à l’aide des langages Ht
 La partie Backend est en JavaScript.
 Le site web sera composé d’une page d'accueil où seront affichés les différents produits des boutiques
 ![](/image/Screenshot%20from%202023-02-06%2013-55-08.png)
+Une page de création de compte:
+![](/image/Screenshot%20from%202023-02-06%2014-10-14.png)
+Une page de connexion:
+![](/image/Screenshot%20from%202023-02-06%2014-13-30.png)
+Une page pour ajouter un produit:
+![](/image/Screenshot%20from%202023-02-06%2014-35-39.png)
+Une page d’administration:
+![](/image/Screenshot%20from%202023-02-06%2015-39-13.png)
