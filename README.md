@@ -14,3 +14,16 @@
 * La création d’un compte client sur une seule des instance permettra de:
     * Acheter des produits provenant de leur instance de manière classique
     * Passer commande chez les commerçants des autres instances depuis la leur; le paiement aura lieu sur l'autre instance mais une nouvelle inscription ne sera pas nécessaire.
+
+## Mise en place:
+Développement d’un site web permettant aux marchands de disposer leurs produits et pour les clients de pouvoir naviguer dans toutes les boutiques mises à disposition sur le réseau.
+Une API par serveur pourra permettre la communication entre les différentes instances et l’insertion d’un serveur dans le réseau.
+Utilisation d’une base de données pour stocker tous les enregistrements tels que les comptes clients et comptes marchant ainsi que les listes de tous les produits mis à disposition dans les boutiques.
+Mise en place d’une architecture réseau redondante afin d'éviter une perte irréversible de données.
+
+* Site Web:
+
+Pour la partie Frontend du site web, elle sera faite à l’aide des langages Html et Css.
+La partie Backend est en JavaScript.
+Le site web sera composé d’une page d'accueil où seront affichés les différents produits des boutiques
+![](/image/Screenshot%20from%202023-02-06%2013-55-08.png)
