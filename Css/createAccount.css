@@ -20,9 +20,10 @@
 }
 
 #formContainer h2{
+    margin-top: 3rem;
     display: flex;
     align-self: center;
-    padding-bottom: 7rem;
+    padding-bottom: 2rem;
 }
 
 body{
@@ -37,4 +38,10 @@ body{
     align-self: center;
     width: 5rem;
     border-radius: 8px;
+}
+
+#formContainer form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
