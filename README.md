@@ -47,8 +47,23 @@ MLD de la base de données:
 ## Techno utilisées pour la réalisation du projet:
 
 ![](/image/js-logo.png)
-![](/image/elephant.png)
-![](/image/Docker-Logo-White-RGB_Horizontal-730x189-1.png.webp)
-![](/image/logo.svg)
-![](/image/CSS3_logo_and_wordmark.svg.png)
+
+* ## Backend du site web
+
 ![](/image/732212.png)
+
+* ## Squelette du site web 
+
+![](/image/logo.svg)
+
+![](/image/CSS3_logo_and_wordmark.svg.png)
+
+* ## Style du site
+
+![](/image/elephant.png)
+
+* ## SGBD du site web
+
+![](/image/Docker-Logo-White-RGB_Horizontal-730x189-1.png.webp)
+
+* ## Déploiement des instances 
