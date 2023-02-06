@@ -19,7 +19,7 @@
 Développement d’un site web permettant aux marchands de disposer leurs produits et pour les clients de pouvoir naviguer dans toutes les boutiques mises à disposition sur le réseau.
 Une API par serveur pourra permettre la communication entre les différentes instances et l’insertion d’un serveur dans le réseau.
 Utilisation d’une base de données pour stocker tous les enregistrements tels que les comptes clients et comptes marchant ainsi que les listes de tous les produits mis à disposition dans les boutiques.
-Mise en place d’une architecture réseau redondante afin d'éviter une perte irréversible de données.
+Mise en place d’une architecture réseau redondante afin d'éviter une perte irréversible des données.
 
 * Site Web:
 
