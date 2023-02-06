@@ -12,15 +12,31 @@
 
         <div id="formContainer">
             <h2>Se connecter</h2>
-            <form method="post">
+            <form method="post" id="formulaire">
                 <label for="Email">Email</label>
                 <input type="text" id="Email"><br>
                 <label for="mdp">Mot de passe</label>
                 <input type="text" id="mdp"><br>
-                <button>Log In</button>
+                <input type="submit" value="Log In" id="button">
             </form>
         </div>
     
+        <script>
+            const form = document.getElementById("formulaire");
+    
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();
+    
+                const email = document.getElementById("Email").value;
+                const mdp = document.getElementById("mdp").value;
+    
+                const data = {email, mdp };
+    
+                console.log(data);
+            });
+    
+    
+        </script>
     </body>
 </body>
 </html>

@@ -9,9 +9,10 @@
 </head>
 <body background="../login-background.jpg">
 
+
     <div id="formContainer">
         <h2>Créer un compte</h2>
-        <form method="post">
+        <form method="post" id="formulaire">
             <label for="prenom">Prenom</label>
             <input type="text" id="prenom"><br>
             <label for="nom">Nom</label>
@@ -20,9 +21,27 @@
             <input type="text" id="Email"><br>
             <label for="mdp">Mot de passe</label>
             <input type="text" id="mdp"><br>
-            <button>Sign In</button>
+            <input type="submit" value="Sign In" id="button">
         </form>
     </div>
 
+    <script>
+        const form = document.getElementById("formulaire");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const prenom = document.getElementById("prenom").value;
+            const nom = document.getElementById("nom").value;
+            const email = document.getElementById("Email").value;
+            const mdp = document.getElementById("mdp").value;
+
+            const data = { prenom, nom, email, mdp };
+
+            console.log(data);
+        });
+
+
+    </script>
 </body>
 </html>

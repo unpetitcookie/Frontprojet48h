@@ -45,3 +45,12 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+
+
+#button{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 5rem;
+    border-radius: 8px;
+}
