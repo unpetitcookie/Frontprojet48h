@@ -1,0 +1,62 @@
+#formContainer{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.203);
+    border-radius: 12px;
+    width: 80rem;
+    height: 40rem;
+}
+
+#formContainer input{
+    display: flex;
+    width: 10rem;
+    border-radius: 12px;
+    height: 1.5rem;
+}
+
+#formContainer input[id=Description]{
+    display: flex;
+    width: 40rem;
+    border-radius: 12px;
+    height: 5.5rem;
+}
+
+#formContainer h2{
+    display: flex;
+    align-self: center;
+    padding: 2rem;
+}
+
+body{
+    width:max-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#formContainer button{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 5rem;
+    border-radius: 8px;
+}
+
+#formContainer form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#button{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 5rem;
+    border-radius: 8px;
+}
