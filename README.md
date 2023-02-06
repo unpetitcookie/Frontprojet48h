@@ -83,7 +83,7 @@ MLD de la base de données:
 
 * ## Déploiement des instances 
 
-## Problèmes liées à cette solution
+## Problèmes liées à cette solution:
 Ce modèle repose sur une base de données centralisée: si tous les serveurs de base de données sont hors service, l'ensemble du réseau sera inopérant car les instances n'auront plus accès aux données, résultant en une impossibilité de se connecter sur le site et d'acceder aux produits proposés.
 Un autre problème est que normalement dans un system décentralisé, les utilisisateurs ne contrôlent que leurs propres données car aucun serveur de données centralisé ou d'entité thiers ne peut modifier les données enregistré ce qui améliore beaucoup la sécurité de ce genre d'applications, cependant dans le modèle proposé, théoriquement, il est toujours possible de modifier les enregistrements de la base de données.
 
