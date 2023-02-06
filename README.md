@@ -31,7 +31,7 @@
     * Passer commande chez les commerçants des autres instances depuis la leur; le paiement aura lieu sur l'autre instance mais une nouvelle inscription ne sera pas nécessaire.
 
 ## Mise en place:
-Développement d’un site web servira d'interface graphique pour les clients et les marchands ainsi que l'administrateur du serveur.
+Développement d’un site web servira d'interface graphique pour les clients, les marchands et l'administrateur du serveur.
 
 Une API par serveur permettra la communication entre les différentes instances et l’insertion d’un serveur dans le réseau.
 Utilisation d’une base de données pour stocker tous les enregistrements tels que les comptes clients et comptes marchand ainsi que les listes de tous les produits mis à disposition dans les boutiques.
@@ -56,9 +56,6 @@ Une page d’administration:
 
 MLD de la base de données:
 ![](/image/drawSQL-chall48h-export-2023-02-06.png)
-
-## Organisation du projet:
-![](/image/Screenshot%20from%202023-02-06%2011-21-39.png)
 
 ## Techno utilisées pour la réalisation du projet:
 
@@ -85,3 +82,11 @@ MLD de la base de données:
 ![](/image/Docker-Logo-White-RGB_Horizontal-730x189-1.png.webp)
 
 * ## Déploiement des instances 
+
+## Problèmes liées à cette solution
+Ce modèle repose sur une base de données centralisée: si tous les serveurs de base de données sont hors service, l'ensemble du réseau sera inopérant car les instances n'auront plus accès aux données, résultant en une impossibilité de se connecter sur le site et d'acceder aux produits proposés.
+Un autre problème est que normalement dans un system décentralisé, les utilisisateurs ne contrôlent que leurs propres données car aucun serveur de données centralisé ou d'entité thiers ne peut modifier les données enregistré ce qui améliore beaucoup la sécurité de ce genre d'applications, cependant dans le modèle proposé, théoriquement, il est toujours possible de modifier les enregistrements de la base de données.
+
+
+## Organisation du projet:
+![](/image/Screenshot%20from%202023-02-06%2011-21-39.png)
