@@ -7,20 +7,24 @@
 * Proposer une solution compatible que les commerçants pourront utiliser.
 
 ## Solutions:
-* Un réseau de serveurs ("instances"), décentralisé (qui ne dépendent pas d’une entité centrale)
-* Chaque serveur pourra accueillir plusieurs commerçants approuvés par l'administrateur de l'instance
-* Le premier marchand d'une instance sera désigné comme étant l'administateur du serveur
-* Option permettant à l’administrateur d’une instance de pouvoir bloquer l’affichage des sites d’une instance spécifique
+* Un réseau de serveurs (instances), décentralisé (qui ne dépendent pas d’une entité centrale)
+* Chaque serveur pourra accueillir plusieurs commerçants
 * Possibilité de trouver des produits de tous les sites marchands du serveur ainsi que les autres sites sur les serveurs connectés à l’instance actuelle et les serveurs connectés à ces autres serveurs et ainsi de suite
+* Le premier marchand d'une instance sera désigné comme étant l'administateur du serveur
+* Les administrateurs pourront:
+    * Valider ou refuser l'ajout d'un commerçant dans leur instance
+    * Choisir le mode de paiement disponible sur leur instance
+    * Bloquer ou débloquer l'affichage des boutiques de certaines instances
 * Les marchands pourront:
     * Disposer leurs produits en leur ajoutant une description , une image et un prix.
-    * Modifier un article deja exposé, par example son pris son image et sa description
+    * Modifier un article deja exposé, par example: son prix, son image et sa description
     * Supprimer un article de sa boutique
 * Les clients pourront:
     * Naviguer dans toutes les boutiques mises à disposition sur le réseau
     * Ajouter les produits qui les intéresse dans un panier
-    * Annuler leur panier 
+    * Annuler leur panier
     * Payer leur Panier
+    * Supprimer un article de leur panier
 
 * La création d’un compte client sur une seule des instance permettra de:
     * Acheter des produits provenant de leur instance de manière classique
