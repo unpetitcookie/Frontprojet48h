@@ -87,6 +87,9 @@ MLD de la base de données:
 Ce modèle repose sur une base de données centralisée: si tous les serveurs de base de données sont hors service, l'ensemble du réseau sera inopérant car les instances n'auront plus accès aux données, résultant en une impossibilité de se connecter sur le site et d'acceder aux produits proposés.
 Un autre problème est que normalement dans un system décentralisé, les utilisisateurs ne contrôlent que leurs propres données car aucun serveur de données centralisé ou d'entité thiers ne peut modifier les données enregistré ce qui améliore beaucoup la sécurité de ce genre d'applications, cependant dans le modèle proposé, théoriquement, il est toujours possible de modifier les enregistrements de la base de données.
 
+Une solution envisageable serait de mettre en place un autre modèle qui reposerait sur une blockchain chiffrée; les informations dans une blockchain sont immuables, elles ne peuvent plus être modifiées une fois enregistrées dedans. Cela resoudrait le fait que les informations dans une base de données traditionnelles puissent être modifiable après enregistrement. De plus, chaque noeud et donc instances/serveurs, possedra une copie de cette blockchain ce qui le rend indépendant d'un serveur central de base données, ainsi, en cas de problèmes sur le réseau, chaque serveur pourra continuer de fonctionner.
+
+Le choix d'une base de données traditionnelle a été fait dû à une contrainte de temps, la nature du projet nous imposait de rendre un prototype de solution en 48h ce qui rend compliqué la mise en place d'une blockchain valide.
 
 ## Organisation du projet:
 ![](/image/Screenshot%20from%202023-02-06%2011-21-39.png)
