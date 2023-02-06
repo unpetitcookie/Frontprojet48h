@@ -25,23 +25,6 @@
         </form>
     </div>
     
-    <script>
-        const form = document.getElementById("formulaire");
-        
-        form.addEventListener("submit", function(event) {
-            event.preventDefault();
-            
-            const prenom = document.getElementById("prenom").value;
-            const nom = document.getElementById("nom").value;
-            const email = document.getElementById("Email").value;
-            const mdp = document.getElementById("mdp").value;
-            
-            const data = { prenom, nom, email, mdp };
-            
-            console.log(data);
-        });
-        
-        
-    </script>
+    <script src="../script/createAccount.js"></script>
 </body>
 </html>
