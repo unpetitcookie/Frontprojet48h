@@ -35,3 +35,5 @@ Une page pour ajouter un produit:
 ![](/image/Screenshot%20from%202023-02-06%2014-35-39.png)
 Une page d’administration:
 ![](/image/Screenshot%20from%202023-02-06%2015-39-13.png)
+## Organisation du projet:
+![](/image/Screenshot%20from%202023-02-06%2011-21-39.png)
