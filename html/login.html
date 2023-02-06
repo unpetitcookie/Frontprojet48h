@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/Login.css">
+    <title>Login</title>
+</head>
+<body background="../login-background.jpg">
+    
+    <div id="formContainer">
+        <h2>Se connecter</h2>
+        <form method="post" id="formulaire">
+            <label for="Email">Email</label>
+            <input type="text" id="Email"><br>
+            <label for="mdp">Mot de passe</label>
+            <input type="text" id="mdp"><br>
+            <input type="submit" value="Log In" id="button">
+        </form>
+    </div>
+    
+    <script>
+        const form = document.getElementById("formulaire");
+        
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            const email = document.getElementById("Email").value;
+            const mdp = document.getElementById("mdp").value;
+            
+            const data = {email, mdp };
+            
+            console.log(data);
+        });
+        
+        
+    </script>
+</body>
+</html>

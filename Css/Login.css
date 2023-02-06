@@ -23,7 +23,7 @@
     margin-top: 3rem;
     display: flex;
     align-self: center;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 
 body{
@@ -32,7 +32,7 @@ body{
     background-size: cover;
 }
 
-#button{
+#formContainer button{
     display: flex;
     justify-content: center;
     align-self: center;
@@ -44,4 +44,13 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+
+#button{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 5rem;
+    border-radius: 8px;
 }
