@@ -9,8 +9,8 @@
 </head>
 
 <body background="../assets/login-background.jpg">
-    <form method="post" id ="formulaire">
-         <!-- <div class="container">  
+    <form id ="formulaire">
+         <div class="container"> 
             <h1>Ajouter un Produit:</h1>
             <aside class="printimage">
                 <button<label for="avatar">Importer une image du produit:</button</label>
@@ -18,33 +18,32 @@
                 id="avatar" name="avatar"
                 accept="image/png, image/jpeg">
                 
-            </aside>-->
-                
-                    <input type="text" placeholder= "Nom du Produit" name="Produit" id ="nameProduct"><br>
-                <div class="Descrition">
+            </aside>
+                <div class="Descrition">-->
+                    <input type="text"placeholder="Nom du Produit" name="Produit"id ="nameProduct"><br>
+                </div> 
                 <textarea name="Descrition" placeholder="Descrition" rows="5" cols="30" id="Descrition"></textarea><br>
                 <div>
                     <label for="productPrice">Prix :</label>
                     <input type="number" placeholder="0" step="0.01" min="0"id="price">
                 </div>
-                <label>Tag:</label>
-                <input type="text" name="Tag" id="Tag"><br>
+                <label>Tag: <input type="text" name="Tag"></label><br>
                 
                 
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Submit" /><br>
     </div>
     
 </form>
 <script>
     const form = document.getElementById("formulaire");
     
-    form.addEventListener("submit", function(event) {
+    form.addEventListener("Submit", function(event) {
         event.preventDefault();
         
         const nomDuProduit = document.getElementById("nameProduct").value;
         const Description = document.getElementById("Descrition").value;
         const price = document.getElementById("price").value;
-        const tag = document.getElementById("Tag").value;
+        const tag = document.getElementById("tag").value;
         
         const data = { nomDuProduit, Description, price, tag };
         
