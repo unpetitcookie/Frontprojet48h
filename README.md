@@ -81,7 +81,7 @@ MLD de la base de données:
 
 ![](/image/Docker-Logo-White-RGB_Horizontal-730x189-1.png.webp)
 
-* ## Déploiement des instances 
+* ## Déploiement des instances pour le protoypage
 
 ## Problèmes liées à cette solution:
 Ce modèle repose sur une base de données centralisée: si tous les serveurs de base de données sont hors service, l'ensemble du réseau sera inopérant car les instances n'auront plus accès aux données, résultant en une impossibilité de se connecter sur le site et d'acceder aux produits proposés.
