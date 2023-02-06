@@ -14,13 +14,13 @@
         <h2>Créer un compte</h2>
         <form method="post" id="formulaire">
             <label for="prenom">Prenom</label>
-            <input type="text" id="prenom"><br>
+            <input type="text" id="prenom" required><br>
             <label for="nom">Nom</label>
-            <input type="text" id="nom"><br>
-            <label for="Email" type="Email">Email</label>
-            <input type="text" id="Email"><br>
+            <input type="text" id="nom" required><br>
+            <label for="Email">Email</label>
+            <input type="text" required id="Email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
             <label for="mdp">Mot de passe</label>
-            <input type="text" id="mdp"><br>
+            <input type="text" id="mdp" required><br>
             <input type="submit" value="Sign In" id="button">
         </form>
     </div>
