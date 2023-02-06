@@ -56,6 +56,8 @@ MLD de la base de données:
 
 ![](/image/logo.svg)
 
+* ## Lanccement du serveur pour le site web
+
 ![](/image/CSS3_logo_and_wordmark.svg.png)
 
 * ## Style du site
