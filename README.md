@@ -93,3 +93,12 @@ Le choix d'une base de données traditionnelle a été fait dû à une contraint
 
 ## Organisation du projet:
 ![](/image/Screenshot%20from%202023-02-06%2011-21-39.png)
+
+## Réflexion IA&DATA:
+
+L'une des questions qui peut émerger est : Comment proposer des suggestions d'achat fédérées aux utilisateurs enregistrés en fonctions de leurs commandes déjà passées ?
+
+2 algorithmes envisageables :
+* Système basé sur le contenu : celui-ci se base sur les achats précédents de l'utilisateur pour lui proposer des articles similaires
+* Système de type filtrage collaboratif : celui-là propose à l'utilisateur des articles achetés par d'autres utilisateurs similaires (ayant déjà acheté les mêmes articles)
+![image](/image/IA.png)
