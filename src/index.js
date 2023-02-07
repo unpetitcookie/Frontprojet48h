@@ -8,6 +8,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Addproduct from './pages/AddProduct';
 import Admin from './pages/Admin';
+import { Commande } from './pages/Commandes.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +20,7 @@ root.render(
         <Route element={<Signup />} path='/signup' />
         <Route element={<Addproduct />} path="/addproduct" />
         <Route element={<Admin />} path="/admin" />
+        <Route element={<Commande/>} path="/commande"/>
       </Routes>
     </BrowserRouter>
 
