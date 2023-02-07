@@ -14,12 +14,12 @@ const Login = () => {
   return (
     <div>
       <Link to="/">
-        <img src={image} alt="" id="image-home"/>
+        <img src={image} alt="" id="image-home" />
       </Link>
       <div id="formContainer">
         <h2>Se connecter</h2>
-        <form id="formulaire" onSubmit={(event) => loguser(event)}>
-          <label for="Email">Email</label>
+        <form id="formulaire-login" onSubmit={(event) => loguser(event)}>
+          <label id="label-login" for="Email">Email</label>
           <input
             required
             id="Email"
@@ -34,10 +34,10 @@ const Login = () => {
             type="text"
             id="mdp"
             value={mdp}
-            onChange={(e) => setmdp(e.target.value)}
-          />
-          <br />
-          <input type="submit" value="Log In" id="button" required />
+            onChange={(e) => setmdp(e.target.value)} /><br />
+          <a id="forgot-mdp-login" href="">Mot de passe oublié ?</a>
+          <a id="create-account-login" href="/signup">Créer un compte</a>
+          <input type="submit" value="Log In" id="button-login" required />
         </form>
       </div>
     </div>
