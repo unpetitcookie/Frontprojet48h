@@ -71,7 +71,7 @@ MLD de la base de données:
 
 ![](/image/logo.svg)
 
-* ## Lanccement du serveur pour le site web
+* ## Runtime su site web
 
 ![](/image/CSS3_logo_and_wordmark.svg.png)
 
@@ -87,7 +87,7 @@ MLD de la base de données:
 
 ## Problèmes liées à cette solution:
 Ce modèle repose sur une base de données centralisée: si tous les serveurs de base de données sont hors service, l'ensemble du réseau sera inopérant car les instances n'auront plus accès aux données, résultant en une impossibilité de se connecter sur le site et d'acceder aux produits proposés.
-Un autre problème est que normalement dans un system décentralisé, les utilisisateurs ne contrôlent que leurs propres données car aucun serveur de données centralisé ou d'entité thiers ne peut modifier les données enregistré ce qui améliore beaucoup la sécurité de ce genre d'applications, cependant dans le modèle proposé, théoriquement, il est toujours possible de modifier les enregistrements de la base de données. Ce modèle implique aussi de devoir acheter des serveurs, notamment pour la base de données, ce qui signifie que les commercants devront investir dans du matérielle informatique.
+Ce modèle implique aussi de devoir acheter des serveurs, notamment pour la base de données, ce qui signifie que les commercants devront investir dans du matérielle informatique.
 
 Une solution envisageable serait de mettre en place un autre modèle qui reposerait sur une blockchain chiffrée; les informations dans une blockchain sont immuables, elles ne peuvent plus être modifiées une fois enregistrées dedans sauf si une majorité des noeuds décident de les modifier. Cela resoudrait le fait que les informations dans une base de données traditionnelles puissent être modifiable après enregistrement. De plus, chaque noeud et donc instances/serveurs, possedra une copie de cette blockchain ce qui le rend indépendant d'un serveur central de base données, ainsi, en cas de problèmes sur le réseau, chaque serveur pourra continuer de fonctionner.
 
