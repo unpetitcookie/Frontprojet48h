@@ -1,0 +1,21 @@
+
+  
+  input {
+    padding: 10px;
+    box-shadow: 2px 2px 4px grey;
+    font-size: 14px;
+    font-weight: 600;
+    width: 300px;
+  }
+body{
+    text-align: center;
+    width: max-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+}
+textarea {
+    resize: none;
+  }

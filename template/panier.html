@@ -1,17 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Css/panier.css">
-    <title>Votre panier</title>
-</head>
-<body>
-    <h1>Votre panier</h1>
+    <link rel="stylesheet" href="../static\Css/panier.css">
+    <title>Mon Panier</title>
+  </head>
 
-    
+  <body>
+    <h1>Mon Panier</h1>
+    <table id="panier">
+      <tr>
+        <th>Article</th>
+        <th>Prix</th>
+        <th>Quantité</th>
+        <th>Total</th>
+      </tr>
+      <tr>
+        <td>T-Shirt</td>
+        <td>20€</td>
+        <td><input type="number" value="1" min="0"></td>
+        <td class="total"></td>
+      </tr>
+      <tr>
+        <td>Pantalon</td>
+        <td>30€</td>
+        <td><input type="number" value="1"min="0"></td>
+        <td class="total"></td>
+      </tr>
+    </table>
+    <p id="total">Total général :</p>
 
-    <button>Passer à la commande</button>
-</body>
+    <script>
+      const panier = document.querySelector("#panier");
+      const inputs = panier.querySelectorAll("input[type='number']");
+      const totalEl = document.querySelector("#total");
+
+      function updateTotal() {
+        let total = 0;
+
+        inputs.forEach((input, index) => {
+          const row = input.closest("tr");
+          const price = parseFloat(row.querySelector("td:nth-child(2)").textContent.slice(0, -1));
+          const totalEl = row.querySelector(".total");
+
+          const rowTotal = price * input.value;
+          totalEl.textContent = `${rowTotal}€`;
+          total += rowTotal;
+        });
+
+        totalEl.textContent = `Total général : ${total}€`;
+      }
+
+      inputs.forEach(input => input.addEventListener("input", updateTotal));
+      updateTotal();
+    </script>
+  </body>
 </html>

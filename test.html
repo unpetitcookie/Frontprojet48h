@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../Css/AddProduct.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddProduct</title>
+</head>
+
+<body background="../assets/login-background.jpg">
+    <form id ="formulaire">
+         <div class="container"> 
+            <h1>Ajouter un Produit:</h1>
+            <aside class="printimage">
+                <button<label for="avatar">Importer une image du produit:</button</label>
+                <input type="file"
+                id="avatar" name="avatar"
+                accept="image/png, image/jpeg">
+                
+            </aside>
+                <div class="Descrition">-->
+                    <input type="text"placeholder="Nom du Produit" name="Produit"id ="nameProduct"><br>
+                </div> 
+                <textarea name="Descrition" placeholder="Descrition" rows="5" cols="30" id="Descrition"></textarea><br>
+                <div>
+                    <label for="productPrice">Prix :</label>
+                    <input type="number" placeholder="0" step="0.01" min="0"id="price">
+                </div>
+                <label>Tag: <input type="text" name="Tag"></label><br>
+                
+                
+                <input type="submit" value="Submit" /><br>
+    </div>
+    
+</form>
+<script>
+    const form = document.getElementById("formulaire");
+    
+    form.addEventListener("Submit", function(event) {
+        event.preventDefault();
+        
+        const nomDuProduit = document.getElementById("nameProduct").value;
+        const Description = document.getElementById("Descrition").value;
+        const price = document.getElementById("price").value;
+        const tag = document.getElementById("tag").value;
+        
+        const data = { nomDuProduit, Description, price, tag };
+        
+        console.log(data);
+    });
+    
+    
+</script>
+</body>
+</html>

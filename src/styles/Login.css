@@ -1,3 +1,7 @@
+html{
+    background-image: url("/login-background.jpg");
+}
+
 #formContainer{
     display: flex;
     align-items: center;
@@ -15,7 +19,7 @@
   display: flex;
   width: 10rem;
   height: 1.5rem;
-  border:0;
+  
 }
 #formContainer input[type="submit"]{
   margin-top: 7%;
@@ -115,14 +119,4 @@
 /* reset input */
 .form__field:required, .form__field:invalid {
   box-shadow: none;
-}
-
-body{
-  background: linear-gradient(75deg, #FFDFD3, #FEC8D8, #D291BC);
-}
-
-image-home{
-  margin-left: 15%;
-  margin-top: 5%;
-  width: 18%;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/header.css';
 import perso from '../perso.png';
+// import shop from '../shop.png';
 
 class Header extends React.Component {
     render() {
@@ -11,11 +12,13 @@ class Header extends React.Component {
                         <h1 class="h1-header">Open-Octodon</h1>
                     </div>
                     <div class="header-right">
-                        <a class="active" href="#home">Home</a>
+                        <a class="active" href="/">Home</a>
+                        <a class="active" href="/addproduct">Ajouter un produit</a>
+                        <a class="active" href="/admin">Admin</a>
                         <form>
                             <input type="text" name="search" placeholder="Search.." />
                         </form>
-                        <a class="login" href="">
+                        <a class="login" href="/login">
                             <img src={perso} />
                         </a>
                     </div>
@@ -24,5 +27,4 @@ class Header extends React.Component {
         )
     }
 }
-
 export default Header;
