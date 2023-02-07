@@ -137,13 +137,4 @@ Ensuite chaque produit devra être encodé dans une représentation numérique p
 Le calcul de similarité entre les articles pourra alors prendre en entrée les lignes de cette matrice. La similarité cosinus pourra être utilisée. Il s'agit du produit scalaire entre deux vecteurs divisé par le produit de leurs normes. Le résultat est donc compris dans l'intervalle [-1;1], -1 indique deux vecteurs opposés et 1 indique deux vecteurs colinéaires donc avec une forte similarité.
 
 ## Organisation du projet:
-![](/image/Screenshot%20from%202023-02-06%2011-21-39.png)
-
-## Techno utilisées pour la réalisation du projet:
-
-![](/image/js-logo.png)
-![](/image/elephant.png)
-![](/image/Docker-Logo-White-RGB_Horizontal-730x189-1.png.webp)
-![](/image/logo.svg)
-![](/image/CSS3_logo_and_wordmark.svg.png)
-![](/image/732212.png)
+![](/image/Screenshot%20from%202023-02-07%2022-11-49.png)
