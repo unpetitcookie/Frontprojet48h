@@ -35,7 +35,7 @@ const AddProduct = () => {
     return (
         <div>
             <Header />
-            <div id="formContainer">
+            <div id="formContainer-addproduct">
                 <h2>Ajouter un nouveau produit</h2>
                 <form id="formulaire" onSubmit={(e) => addProduct(e)}>
                     <h2>Ajouter un nouveau produit</h2>
