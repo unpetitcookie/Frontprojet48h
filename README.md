@@ -58,9 +58,13 @@ Une page d’administration:
 * Base de Données:
 
 Toutes les instances du réseau auront le même MLD ce qui facilitera l'interconnexion.
+
 Une table `Shop` qui contiendra des informations sur les boutiques hébergées par le serveur. Cela permettra aux API de se transmettre quelles boutiques sont disponibles sur leur instance.
+
 Une table `User` dans laquelle sera enregistrées toutes les information de l'utilisateurs dont ses identifiant.
-une table `Bag` qui reprèsente les panier clients.
+
+Une table `Bag` qui reprèsente les panier clients.
+
 Enfin, une table `Article` pour contenir les informations des produits. 
 
 MLD de la base de données:
