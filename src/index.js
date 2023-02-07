@@ -6,7 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import Addproduct from './pages/AddProduct';
+import AddProduct from './pages/AddProduct.js';
+import Bag from './pages/Bag.js';
 import Admin from './pages/Admin';
 import { Commande } from './pages/Commandes.js';
 
@@ -18,13 +19,14 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route element={<Login />} path="/login" />
         <Route element={<Signup />} path='/signup' />
-        <Route element={<Addproduct />} path="/addproduct" />
+        <Route element={<AddProduct />} path='/addProduct' />
+        <Route element={<Bag />} path='/bag' />
         <Route element={<Admin />} path="/admin" />
-        <Route element={<Commande/>} path="/commande"/>
+        <Route element={<Commande />} path="/commande" />
       </Routes>
     </BrowserRouter>
 
-  </React.StrictMode>
+  </React.StrictMode >
 );
 
 // If you want to start measuring performance in your app, pass a function

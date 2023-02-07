@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Login.css"
-import home from "../styles/image-home.png"
+import home from "../image-home.png"
 
 const Login = () => {
   const [email, setemail] = useState("");
@@ -25,7 +25,7 @@ const Login = () => {
             type="email"
             placeholder="Email"
             value={email}
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$"
             onChange={(e) => setemail(e.target.value)}
           />
           <br />
@@ -35,9 +35,9 @@ const Login = () => {
             id="Mdp-login"
             placeholder="Mot de passe"
             value={mdp}
-            onChange={(e) => setmdp(e.target.value)}/><br />
-            <a id="forgot-mdp-login" href="">Mot de passe oublié ?</a>
-            <a id="create-account-login" href="/signup">Créer un compte</a>
+            onChange={(e) => setmdp(e.target.value)} /><br />
+          <a id="forgot-mdp-login" href="">Mot de passe oublié ?</a>
+          <a id="create-account-login" href="/signup">Créer un compte</a>
           <input type="submit" value="Log In" id="button-login" required />
         </form>
       </div>
