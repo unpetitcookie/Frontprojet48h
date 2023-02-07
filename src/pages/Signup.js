@@ -1,5 +1,9 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { parseString } from "../createAccount";
+import '../styles/createAccount.css'
+import image from "../image-home.png"
+
 
 const Signup = () => {
   const [Prenom, setPrenom] = useState("");
@@ -19,7 +23,11 @@ const Signup = () => {
   };
   return (
     <div>
-      <h2>Créer un compte</h2>
+      <Link to="/">
+        <img src={image} alt="" id="image-home"/>
+      </Link>
+      <div id="formContainer">
+        <h2>Créer un compte</h2>
       <form id="formulaire" onSubmit={(event) => loguser(event)}>
         <label for="prenom">Prenom</label>
         <input
@@ -60,6 +68,8 @@ const Signup = () => {
         <br />
         <input type="submit" value="Log In" id="button" required />
       </form>
+      </div>
+      
     </div>
   );
 };
