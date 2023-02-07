@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import '../styles/Login.css'
+import image from "../image-home.png"
 
 const Login = () => {
   const [email, setemail] = useState("");
@@ -10,9 +13,9 @@ const Login = () => {
   };
   return (
     <div>
-      <a href="Home.html">
-        <img src="../../image/image-home.png" />
-      </a>
+      <Link to="/">
+        <img src={image} alt="" id="image-home"/>
+      </Link>
       <div id="formContainer">
         <h2>Se connecter</h2>
         <form id="formulaire" onSubmit={(event) => loguser(event)}>

@@ -27,9 +27,7 @@
 }
 
 body{
-    width:max-content;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(75deg, #FFDFD3, #FEC8D8, #D291BC);
 }
 
 #button{
@@ -46,7 +44,7 @@ body{
     flex-direction: column;
 }
 
-img{
+image-home{
     margin-left: 15%;
     margin-top: 5%;
     width: 18%;
