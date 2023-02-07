@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { parseString } from "../createAccount";
 import "../styles/createAccount.css"
-import home from "../styles/image-home.png"
+import home from "../image-home.png"
 
 const Signup = () => {
   const [Prenom, setPrenom] = useState("");
@@ -72,7 +73,7 @@ const Signup = () => {
           <input type="submit" value="Log In" id="button-signup" required />
         </form>
       </div>
-    </div >
+    </div>
   );
 };
 

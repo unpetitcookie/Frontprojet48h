@@ -1,4 +1,4 @@
-import home from "../styles/image-home.png"
+import home from "../image-home.png"
 import "../styles/commande.css"
 
 export const Commande = () => {
@@ -13,13 +13,13 @@ export const Commande = () => {
           type={"text"}
           id="inputCarte"
           placeholder="numero de carte"
-        ></input><br/>
+        ></input><br />
         <input
           type={"text"}
           id="inputCarte"
           placeholder="criptogramme"
-        ></input><br/>
-        <input type={"text"} id="inputCarte" placeholder="date"></input><br/>
+        ></input><br />
+        <input type={"text"} id="inputCarte" placeholder="date"></input><br />
         <input type={"submit"} id="button" value="Envoyer"></input>
       </div>
       <div id="infoCommande">

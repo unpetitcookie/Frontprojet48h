@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import '../styles/Login.css'
-import image from "../image-home.png"
+import "../styles/Login.css"
+import home from "../image-home.png"
 
 const Login = () => {
   const [email, setemail] = useState("");
@@ -13,26 +12,28 @@ const Login = () => {
   };
   return (
     <div>
-      <Link to="/">
-        <img src={image} alt="" id="image-home" />
-      </Link>
-      <div id="formContainer">
+      <a href="/">
+        <img id="icon-home" src={home} />
+      </a>
+      <div id="formContainer-login">
         <h2>Se connecter</h2>
         <form id="formulaire-login" onSubmit={(event) => loguser(event)}>
           <label id="label-login" for="Email">Email</label>
           <input
             required
-            id="Email"
+            id="Email-login"
             type="email"
+            placeholder="Email"
             value={email}
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$"
             onChange={(e) => setemail(e.target.value)}
           />
           <br />
-          <label for="mdp">Mot de passe</label>
+          <label id="label-login" for="mdp">Mot de passe</label>
           <input
-            type="text"
-            id="mdp"
+            type="password"
+            id="Mdp-login"
+            placeholder="Mot de passe"
             value={mdp}
             onChange={(e) => setmdp(e.target.value)} /><br />
           <a id="forgot-mdp-login" href="">Mot de passe oublié ?</a>
