@@ -138,3 +138,12 @@ Le calcul de similarité entre les articles pourra alors prendre en entrée les 
 
 ## Organisation du projet:
 ![](/image/Screenshot%20from%202023-02-06%2011-21-39.png)
+
+## Techno utilisées pour la réalisation du projet:
+
+![](/image/js-logo.png)
+![](/image/elephant.png)
+![](/image/Docker-Logo-White-RGB_Horizontal-730x189-1.png.webp)
+![](/image/logo.svg)
+![](/image/CSS3_logo_and_wordmark.svg.png)
+![](/image/732212.png)

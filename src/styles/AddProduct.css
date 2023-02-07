@@ -39,12 +39,6 @@
     padding: 1rem;
 }
 
-body{
-    width:max-content;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 #formContainer button{
     display: flex;
     justify-content: center;

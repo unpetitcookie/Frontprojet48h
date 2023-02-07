@@ -1,16 +1,15 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import '../styles/AddProduct.css'
-const AddProduct=()=>{
-    const [allImages,setImage]=useState([]);
-    const [description,setDescription]=useState('');
-    const [nameProduct,setNameProduct]=useState('');
-    const [price,setPrice]=useState('');
-    const [type,setType]=useState('')
-    const [tag,setTag]=useState('');
 
-
-        const addProduct=(e)=>{
-        console.log(nameProduct,description,price,type,tag)
+const AddProduct = () => {
+    const [allImages, setImage] = useState([]);
+    const [description, setDescription] = useState('');
+    const [nameProduct, setNameProduct] = useState('');
+    const [price, setPrice] = useState('');
+    const [type, setType] = useState('')
+    const [tag, setTag] = useState('');
+    const addProduct = (e) => {
+        console.log(nameProduct, description, price, type, tag)
         e.preventDefault();
     }
     /*function displayImages(e) {
@@ -32,20 +31,20 @@ const AddProduct=()=>{
         setImage(tempImages)
       }
     */
-    return(
+    return (
         <div>
-            <form  id ="formulaire" onSubmit={(e)=> addProduct(e)}>
-         <h2>Ajouter un nouveau produit</h2>
-         <form method="post" id="formulaire"/>
-            <label  for="nameProduct">Nom du produit</label>
-            <input value={nameProduct} onChange={(e)=>setNameProduct(e.target.value)}type="text" id="nameProduct"></input><br/>
-            <label for="Description">Description</label>
-            <input value={description} onChange={(e)=>setDescription(e.target.value)} type="text" id="Description"></input><br/>
-            <label for="Images">Insérez des images du produit</label>
-            <input type="file" id="Images" accept="image/jpeg, image/png, image/jpg" multiple="multiple"></input><br/>
-            
-            
-           {/* <output>
+            <form id="formulaire" onSubmit={(e) => addProduct(e)}>
+                <h2>Ajouter un nouveau produit</h2>
+                <form method="post" id="formulaire" />
+                <label for="nameProduct">Nom du produit</label>
+                <input value={nameProduct} onChange={(e) => setNameProduct(e.target.value)} type="text" id="nameProduct"></input><br />
+                <label for="Description">Description</label>
+                <input value={description} onChange={(e) => setDescription(e.target.value)} type="text" id="Description"></input><br />
+                <label for="Images">Insérez des images du produit</label>
+                <input type="file" id="Images" accept="image/jpeg, image/png, image/jpg" multiple="multiple"></input><br />
+
+
+                {/* <output>
             { allImages.forEach((img, index) => {
             console.log("map :", {img, index});
             return <>
@@ -57,19 +56,19 @@ const AddProduct=()=>{
             })
             }
             </output> */}
-            <label for="Price">Prix</label>
-            <input value={price} onChange={(e)=>setPrice(e.target.value)} type="text" id="Price"></input><br/>
-            <label for="Type">Type</label>
-            <input value={type} onChange={(e)=>setType(e.target.value)} type="text" id="Type"></input><br/>
-            <label for="Tags">Tags</label>
-            <input value={tag} onChange={(e)=>setTag(e.target.value)} type="text" id="Tags"></input><br/>
-            <input type="submit" value="Soumettre" id="button" />
-        </form>
-        </div>
+                <label for="Price">Prix</label>
+                <input value={price} onChange={(e) => setPrice(e.target.value)} type="text" id="Price"></input><br />
+                <label for="Type">Type</label>
+                <input value={type} onChange={(e) => setType(e.target.value)} type="text" id="Type"></input><br />
+                <label for="Tags">Tags</label>
+                <input value={tag} onChange={(e) => setTag(e.target.value)} type="text" id="Tags"></input><br />
+                <input type="submit" value="Soumettre" id="button" />
+            </form>
+        </div >
     );
 }
 export default AddProduct;
- {/*  
+{/*  
                     <input value={nameProduct}onChange={(e)=>setNameProduct(e.target.value)} type="text" placeholder= "Nom du Produit" name="Produit" id ="nameProduct"></input><br/>
 
                 <div class="Descrition">
