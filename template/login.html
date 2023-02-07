@@ -4,20 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/Css/Login.css">
+    <link rel="stylesheet" href="../static\Css/Login.css">
     <title>Login</title>
 </head>
+<<<<<<<<< Temporary merge branch 1:template/login.html
+
+    <body>
+
+        <div id="formContainer">
+            <h2>Se connecter</h2>
+            <form method="post" id="formulaire">
+                <label for="Email">Email</label>
+                <input type="text" id="Email"><br>
+                <label for="mdp">Mot de passe</label>
+                <input type="text" id="mdp"><br>
+                <input type="submit" value="Log In" id="button">
+            </form>
+        </div>
+    </body>
+    <script src="/js/main.js"></script>
+=========
 <body background="../login-background.jpg">
     
     <div id="formContainer">
         <h2>Se connecter</h2>
-        <form class="form__group">
-                <input type="input" class="form__field" placeholder="Name" name="Email" id='Email' required />
-            <label for="name" class="form__label">Mail/Username</label>
-        </form>
-            <form class="form__group"  id="formulaire">
-            <input type="password" class="form__field" placeholder="Name" name="Password" id='Password' required />
-            <label for="name" class="form__label">Mot de passe</label>
+        <form method="post" id="formulaire">
+            <label for="Email">Email</label>
+            <input type="text" id="Email"><br>
+            <label for="mdp">Mot de passe</label>
+            <input type="text" id="mdp"><br>
             <input type="submit" value="Log In" id="button">
         </form>
     </div>
@@ -39,4 +54,5 @@
         
     </script>
 </body>
+>>>>>>>>> Temporary merge branch 2:html/login.html
 </html>
