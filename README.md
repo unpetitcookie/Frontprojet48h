@@ -6,11 +6,13 @@
 ## Objectif:
 * Proposer une solution compatible que les commerçants pourront utiliser.
 * Permettre à tous les commerçants d'être visibles et trouvables par une clientèle plus large, tout en conservant la souveraineté de leur boutique en ligne et de leur modèle économique.
+* Proposer un prototype de la solution apportée
 
 ## Solutions:
 * Un réseau de serveurs (instances), décentralisé (qui ne dépendent pas d’une entité centrale)
 * Chaque serveur pourra accueillir plusieurs commerçants
 * Possibilité de trouver des produits de tous les sites marchands du serveur ainsi que les autres sites sur les serveurs connectés à l’instance actuelle et les serveurs connectés à ces autres serveurs et ainsi de suite
+* Conserver la communication entre les différentes instances malgrès leurs règles différentes
 * Le premier marchand d'une instance sera désigné comme étant l'administateur du serveur
 * Les administrateurs pourront:
     * Valider ou refuser l'ajout d'un commerçant dans leur instance
@@ -31,7 +33,7 @@
     * Passer commande chez les commerçants des autres instances depuis la leur; le paiement aura lieu sur l'autre instance mais une nouvelle inscription ne sera pas nécessaire.
 
 ## Mise en place:
-Développement d’un site web servira d'interface graphique pour les clients, les marchands et l'administrateur du serveur.
+Un site web servira d'interface graphique pour les clients, les marchands et l'administrateur du serveur.
 
 Une API par serveur permettra la communication entre les différentes instances et l’insertion d’un serveur dans le réseau.
 Utilisation d’une base de données pour stocker tous les enregistrements tels que les comptes clients et comptes marchand ainsi que les listes de tous les produits mis à disposition dans les boutiques.
@@ -56,6 +58,8 @@ Une page d’administration:
 
 MLD de la base de données:
 ![](/image/drawSQL-chall48h-export-2023-02-073.png)
+
+* Prototypage:
 
 ## Techno utilisées pour la réalisation du projet:
 
