@@ -37,16 +37,26 @@ const AddProduct = () => {
             <Header />
             <div id="formContainer-addproduct">
                 <h2>Ajouter un nouveau produit</h2>
-                <form id="formulaire" onSubmit={(e) => addProduct(e)}>
-                    <h2>Ajouter un nouveau produit</h2>
-                    <form method="post" id="formulaire" />
-                    <label for="nameProduct">Nom du produit</label>
-                    <input value={nameProduct} onChange={(e) => setNameProduct(e.target.value)} type="text" id="nameProduct"></input><br />
-                    <label for="Description">Description</label>
-                    <input value={description} onChange={(e) => setDescription(e.target.value)} type="text" id="Description"></input><br />
-                    <label for="Images">Insérez des images du produit</label>
-                    <input type="file" id="Images" accept="image/jpeg, image/png, image/jpg" multiple="multiple"></input><br />
-
+                <form id="form-addproduct" onSubmit={(e) => addProduct(e)}>
+                    <div id="table">
+                        <div id="table-left">
+                            <label id="label-addproduct" for="nameProduct">Nom du produit</label>
+                            <input class="input-addproduct" placeholder='Nom' value={nameProduct} onChange={(e) => setNameProduct(e.target.value)} type="text" ></input><br />
+                            <label id="label-addproduct" for="Description">Description</label>
+                            <input class="input-addproduct" placeholder='Description' value={description} onChange={(e) => setDescription(e.target.value)} type="text"></input><br />
+                            <label id="label-addproduct" for="Images">Insérez des images du produit</label>
+                            <input class="input-addproduct" type="file" accept="image/jpeg, image/png, image/jpg" multiple="multiple"></input><br />
+                        </div>
+                        <div id="table-right">
+                            <label id="label-addproduct" for="Price">Prix</label>
+                            <input class="input-addproduct" placeholder='Prix' value={price} onChange={(e) => setPrice(e.target.value)} type="text" ></input><br />
+                            <label id="label-addproduct" for="Type">Type</label>
+                            <input class="input-addproduct" placeholder='Type' value={type} onChange={(e) => setType(e.target.value)} type="text" ></input><br />
+                            <label id="label-addproduct" for="Tags">Tags</label>
+                            <input class="input-addproduct" placeholder='Tags' value={tag} onChange={(e) => setTag(e.target.value)} type="text" ></input><br />
+                            <input class="button-addproduct" type="submit" value="Soumettre" />
+                        </div>
+                    </div>
 
                     {/* <output>
             { allImages.forEach((img, index) => {
@@ -60,34 +70,10 @@ const AddProduct = () => {
             })
             }
             </output> */}
-                    <label for="Price">Prix</label>
-                    <input value={price} onChange={(e) => setPrice(e.target.value)} type="text" id="Price"></input><br />
-                    <label for="Type">Type</label>
-                    <input value={type} onChange={(e) => setType(e.target.value)} type="text" id="Type"></input><br />
-                    <label for="Tags">Tags</label>
-                    <input value={tag} onChange={(e) => setTag(e.target.value)} type="text" id="Tags"></input><br />
-                    <input type="submit" value="Soumettre" id="button" />
+
                 </form>
             </div>
         </div>
     )
 }
 export default AddProduct;
-{/*  
-                    <input value={nameProduct}onChange={(e)=>setNameProduct(e.target.value)} type="text" placeholder= "Nom du Produit" name="Produit" id ="nameProduct"></input><br/>
-
-                <div class="Descrition">
-                <textarea value={description}onChange={(e)=>setDescription(e.target.value)} name="Descrition" placeholder="Descrition" rows="5" cols="30" id="Descrition"></textarea><br/>
-                </div>
-                <div>
-                    <label for="productPrice">Prix :</label>
-                    <input value={price}onChange={(e)=>setPrice(e.target.value)} type="number" placeholder="0" step="0.01" min="0"id="price"></input>
-                </div>
-                <label>Tag:</label>
-                <input value={tag}onChange={(e)=>setTag(e.target.value)} type="text" name="Tag" id="Tag"></input><br/>
-                
-                
-                <input type="submit" value="Submit" />
-    </div>
-</form>
-        </div>*/}

@@ -1,65 +1,83 @@
-#formContainer{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    flex-direction: column;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: rgba(255, 255, 255, 0.203);
-    border-radius: 12px;
-    width: 80rem;
-    height: 50rem;
+#formContainer-addproduct{
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(255, 255, 255, 0.203);
+  border-radius: 12px;
+  width: 60%;
+  height: 80%;
 }
 
-#formContainer input{
-    display: flex;
-    width: 10rem;
-    border-radius: 12px;
-    height: 1.5rem;
+#formContainer-addproduct h2{
+  display: flex;
+  align-self: center;
+  padding: 2rem;
 }
 
-#formContainer input[id=Description]{
-    display: flex;
-    width: 40rem;
-    border-radius: 12px;
-    height: 5.5rem;
+#table{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#table-left{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#table-right{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+#label-addproduct{
+  text-align: center;
+  margin-top: 10%;
+  width: auto;
+  border-radius: 8px;
+}
+
+#form-addproduct{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-addproduct{
+  justify-content: center;
+  background-color: transparent;
+  width: 190px;
+  height: 30px;
+  border: none;
+  outline: 0;
+  border-bottom: 2px solid #000;
 }
 
 #formContainer input[type=file]{
-    display: flex;
-    width: 40rem;
-    border-radius: 12px;
-    height: 1.5rem;
+  display: flex;
+  width: 40rem;
+  border-radius: 12px;
+  height: 1.5rem;
 }
 
-#formContainer h2{
-    display: flex;
-    align-self: center;
-    padding: 1rem;
-}
-
-#formContainer button{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    width: 5rem;
-    border-radius: 8px;
-}
-
-#formContainer form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-
-#button{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    width: 5rem;
-    border-radius: 8px;
+#button-addproduct{
+  margin-top: 10%;
+  border: 0;
+  padding: 8px 20px;
+  border-radius: 8px;
+  background-color: #11998e;
 }
 
 output{
