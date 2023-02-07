@@ -81,7 +81,7 @@ Lorsqu'un client fera la recherche d'un produit qui ne se trouve pas dans les bo
 
 Il faudra mettre en place un algorithme qui puisse déterminer si une majorité des instances est d'accord pour modifier l'état du réseau.
 C'est à cette algorithme qu'on va faire appelle pour déterminer si une instance peut se connecter au réseau et quel id on va lui attribuer.
-
+<br><br>
 ## Technologies utilisées pour la réalisation du projet:
 
 ![](/image/js-logo.png)
