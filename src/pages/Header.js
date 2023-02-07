@@ -12,7 +12,7 @@ class Header extends React.Component {
                         <h1 class="h1-header">Open-Octodon</h1>
                     </div>
                     <div class="header-right">
-                        <a class="active" href="#home">Home</a>
+                        <a class="active" href="/">Home</a>
                         <a class="active" href="/addproduct">Ajouter un produit</a>
                         <form>
                             <input type="text" name="search" placeholder="Search.." />
