@@ -17,13 +17,13 @@ const Login = () => {
       </a>
       <div id="formContainer-login">
         <h2>Se connecter</h2>
-        <form id="formulaire-login" onSubmit={(event) => loguser(event)}>
+        <form id="form-login" onSubmit={(event) => loguser(event)}>
           <label id="label-login" for="Email">Email</label>
           <input
             required
             id="Email-login"
             type="email"
-            placeholder="Email"
+            placeholder="Entrez votre email..."
             value={email}
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$"
             onChange={(e) => setemail(e.target.value)}
@@ -33,7 +33,7 @@ const Login = () => {
           <input
             type="password"
             id="Mdp-login"
-            placeholder="Mot de passe"
+            placeholder="Entrez votre mot de passe..."
             value={mdp}
             onChange={(e) => setmdp(e.target.value)} /><br />
           <a id="forgot-mdp-login" href="">Mot de passe oublié ?</a>

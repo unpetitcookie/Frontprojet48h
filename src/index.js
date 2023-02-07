@@ -19,10 +19,11 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route element={<Login />} path="/login" />
         <Route element={<Signup />} path='/signup' />
-        <Route element={<AddProduct />} path='/addProduct' />
         <Route element={<Bag />} path='/bag' />
         <Route element={<Admin />} path="/admin" />
         <Route element={<Commande />} path="/commande" />
+        <Route element={<AddProduct />} path="/addproduct" />
+        <Route element={<Admin />} path="/admin" />
       </Routes>
     </BrowserRouter>
 

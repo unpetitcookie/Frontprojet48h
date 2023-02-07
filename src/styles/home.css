@@ -6,6 +6,21 @@
 body {  
     background: linear-gradient(75deg, #FFDFD3, #FEC8D8, #D291BC);
 } 
+#filter-home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+#form-filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
 .home-left{
     display: flex;
     flex-direction: row;

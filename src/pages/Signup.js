@@ -72,8 +72,8 @@ const Signup = () => {
           <a id="account-login" href="/login">Vous avez déjà un compte</a>
           <input type="submit" value="Log In" id="button-signup" required />
         </form>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 };
 
