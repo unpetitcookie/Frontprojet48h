@@ -40,6 +40,7 @@ L'administrateur de l'instance en rentrant ses identifiants aura accès à une p
 l'API sera en charge de l'interconnexion entre les différentes instances. Lorsqu'un client fera la recherche d'un produit qui ne se trouve pas dans les boutiques de l'instance actuelle, l'API enverra de manière récursive les informations utilisateur ainsi que sa recherche aux autres API des autres instances qui vont chercher dans leur base de données si le produit recherché s'y trouve.
 
 * Site Web:
+
 Un site web servira d'interface graphique pour les clients, les marchands et l'administrateur du serveur.
 Pour la partie Frontend du site web, elle sera faite à l’aide des langages Html et Css.
 La partie Backend est en JavaScript.
