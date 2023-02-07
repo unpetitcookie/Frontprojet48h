@@ -1,6 +1,6 @@
 import React from 'react';
-import './header.css';
-import perso from'./perso.png';
+import '../styles/header.css';
+import perso from '../perso.png';
 
 class Header extends React.Component {
     render() {
@@ -13,15 +13,16 @@ class Header extends React.Component {
                     <div class="header-right">
                         <a class="active" href="#home">Home</a>
                         <form>
-                            <input type="text" name="search" placeholder="Search.."/>
+                            <input type="text" name="search" placeholder="Search.." />
                         </form>
                         <a class="login" href="">
-                        <img src={perso}/>
+                            <img src={perso} />
                         </a>
                     </div>
                 </div>
-            </section> 
-    )}
+            </section>
+        )
+    }
 }
 
 export default Header;
