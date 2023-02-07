@@ -59,16 +59,18 @@ Une page d’administration:
 
 Toutes les instances du réseau auront le même MLD ce qui facilitera l'interconnexion.
 
-Une table `Shop` qui contiendra des informations sur les boutiques hébergées par le serveur. Cela permettra aux API de se transmettre quelles boutiques sont disponibles sur leur instance.
+* Une table `Shop` qui contiendra des informations sur les boutiques hébergées par le serveur. Cela permettra aux API de se transmettre quelles boutiques sont disponibles sur leur instance.
 
-Une table `User` dans laquelle sera enregistrées toutes les information de l'utilisateurs dont ses identifiant.
+* Une table `User` dans laquelle sera enregistrées toutes les information de l'utilisateurs dont ses identifiant.
 
-Une table `Bag` qui reprèsente les panier clients.
+* Une table `Bag` qui reprèsente les paniers clients.
 
-Enfin, une table `Article` pour contenir les informations des produits. 
+* Une table `ipAdress` qui servira à stocker les adresses ip des autres API.
+
+* Enfin, une table `Article` pour contenir les informations des produits.
 
 MLD de la base de données:
-![](/image/drawSQL-chall48h-export-2023-02-073.png)
+![](/image/Screenshot%20from%202023-02-07%2016-50-13.png)
 
 ## Technologies utilisées pour la réalisation du projet:
 
