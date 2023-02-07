@@ -55,7 +55,7 @@ MLD de la base de données:
 
 ## Réflexion IA&DATA:
 
-L'une des questions qui peut émerger est : Comment proposer des suggestions d'achat fédérées aux utilisateurs enregistrés en fonctions de leurs commandes déjà passées ?
+L'une des questions qui peut émerger est : Comment proposer des suggestions d'achat fédérées aux utilisateurs enregistrés en fonction de leurs commandes déjà passées ?
 
 2 algorithmes envisageables :
 * Système basé sur le contenu : celui-ci se base sur les achats précédents de l'utilisateur pour lui proposer des articles similaires
