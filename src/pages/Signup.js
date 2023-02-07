@@ -1,23 +1,67 @@
-import React from 'react';
+import React, { useState } from "react";
+import { parseString } from "../createAccount";
 
 const Signup = () => {
+  const [Prenom, setPrenom] = useState("");
+  const [Nom, setNom] = useState("");
+  const [Email, setEmail] = useState("");
+  const [mdp, setmdp] = useState("");
 
-    return (
-        <div>
-            <h2>Créer un compte</h2>
-            <form method="post" id="formulaire">
-                <label for="prenom">Prenom</label>
-                <input type="text" id="prenom" /><br />
-                <label for="nom">Nom</label>
-                <input type="text" id="nom" /><br />
-                <label for="Email">Email</label>
-                <input type="text" id="Email" /><br />
-                <label for="mdp">Mot de passe</label>
-                <input type="text" id="mdp" /><br />
-                <input type="submit" value="Sign In" id="button" />
-            </form>
-        </div>
-    )
-}
+  const loguser = (evant) => {
+    evant.preventDefault();
+    const data = { Prenom, Nom, Email, mdp };
+    for (const key in data) {
+      if (typeof data[key] === "string") {
+        data[key] = parseString(data[key]);
+      }
+    }
+    console.log(data);
+  };
+  return (
+    <div>
+      <h2>Créer un compte</h2>
+      <form id="formulaire" onSubmit={(event) => loguser(event)}>
+        <label for="prenom">Prenom</label>
+        <input
+        required
+          type="text"
+          id="prenom"
+          value={Prenom}
+          onChange={(e) => setPrenom(e.target.value)}
+        />
+        <br />
+        <label for="nom">Nom</label>
+        <input
+        required
+          type="text"
+          id="nom"
+          value={Nom}
+          onChange={(e) => setNom(e.target.value)}
+        />
+        <br />
+        <label for="Email">Email</label>
+        <input
+        required
+          type="text"
+          id="Email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          value={Email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <br />
+        <label for="mdp">Mot de passe</label>
+        <input
+        required
+          type="text"
+          id="mdp"
+          value={mdp}
+          onChange={(e) => setmdp(e.target.value)}
+        />
+        <br />
+        <input type="submit" value="Log In" id="button" required />
+      </form>
+    </div>
+  );
+};
 
 export default Signup;
