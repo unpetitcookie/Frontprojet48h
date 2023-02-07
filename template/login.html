@@ -7,21 +7,34 @@
     <link rel="stylesheet" href="/static/Css/Login.css">
     <title>Login</title>
 </head>
-
-    <body>
-
-        <div id="formContainer">
-            <h2>Se connecter</h2>
-            <form class="form__group">
-                <input type="input" class="form__field" placeholder="Name" name="Email" id='Email' required />
-                <label for="name" class="form__label">Mail/Username</label>
-            </form>
-            <form class="form__group"  id="formulaire">
-                <input type="password" class="form__field" placeholder="Name" name="Password" id='Password' required />
-                <label for="name" class="form__label">Mot de passe</label>
-                <input type="submit" value="Log In" id="button">
-            </form>
-        </div>
-    </body>
-    <script src="/js/main.js"></script>
+<body background="../login-background.jpg">
+    
+    <div id="formContainer">
+        <h2>Se connecter</h2>
+        <form method="post" id="formulaire">
+            <label for="Email">Email</label>
+            <input type="text" id="Email"><br>
+            <label for="mdp">Mot de passe</label>
+            <input type="text" id="mdp"><br>
+            <input type="submit" value="Log In" id="button">
+        </form>
+    </div>
+    
+    <script>
+        const form = document.getElementById("formulaire");
+        
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            const email = document.getElementById("Email").value;
+            const mdp = document.getElementById("mdp").value;
+            
+            const data = {email, mdp };
+            
+            console.log(data);
+        });
+        
+        
+    </script>
+</body>
 </html>

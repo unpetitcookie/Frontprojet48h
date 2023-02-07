@@ -8,8 +8,8 @@
     <title>Créer un compte</title>
 </head>
 <body background="../login-background.jpg">
-
-
+    
+    
     <div id="formContainer">
         <h2>Créer un compte</h2>
         <form method="post" id="formulaire">
@@ -24,24 +24,24 @@
             <input type="submit" value="Sign In" id="button">
         </form>
     </div>
-
+    
     <script>
         const form = document.getElementById("formulaire");
-
+        
         form.addEventListener("submit", function(event) {
             event.preventDefault();
-
+            
             const prenom = document.getElementById("prenom").value;
             const nom = document.getElementById("nom").value;
             const email = document.getElementById("Email").value;
             const mdp = document.getElementById("mdp").value;
-
+            
             const data = { prenom, nom, email, mdp };
-
+            
             console.log(data);
         });
-
-
+        
+        
     </script>
 </body>
 </html>
