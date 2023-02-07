@@ -14,6 +14,7 @@ class Header extends React.Component {
                     <div class="header-right">
                         <a class="active" href="/">Home</a>
                         <a class="active" href="/addproduct">Ajouter un produit</a>
+                        <a class="active" href="/admin">Admin</a>
                         <form>
                             <input type="text" name="search" placeholder="Search.." />
                         </form>
