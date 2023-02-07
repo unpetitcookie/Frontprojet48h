@@ -9,7 +9,7 @@
     background-color: rgba(255, 255, 255, 0.203);
     border-radius: 12px;
     width: 80rem;
-    height: 40rem;
+    height: 50rem;
 }
 
 #formContainer input{
@@ -36,7 +36,7 @@
 #formContainer h2{
     display: flex;
     align-self: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 body{
