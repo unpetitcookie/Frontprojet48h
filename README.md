@@ -80,7 +80,11 @@ Lorsqu'un client fera la recherche d'un produit qui ne se trouve pas dans les bo
 * Algorithme de consensus:
 
 Il faudra mettre en place un algorithme qui puisse déterminer si une majorité des instances est d'accord pour modifier l'état du réseau.
-C'est à cette algorithme qu'on va faire appelle pour déterminer si une instance peut se connecter au réseau et quel id on va lui attribuer.
+C'est cetalgorithme qui va faire appelle aux instances du réseau pour déterminer si une nouvelle instance peut se connecter au réseau et quel id on va lui attribuer. 
+
+Toutes les instances vont calculer un nouvel id, selon une formule spécifique et en prenant en compte les id déjà présents dans leur base de données, une fois qu'une majorité d'instances est d'accord sur l'id, il sera transmis à la nouvelle instance qui le gardera en mémoire dans un ficher. Les instances vont dans leur table `ipAdresse` ajouter le nouvel id du nouveau serveur ainsi que sont adresse réseau. 
+
+Elles vont ensuites communiquer à la nouvelle instance leur propre id et leur propre adresse réseau pour que le nouveau serveur puisse remplir sa table de toutes les instances du réseau.
 <br><br>
 ## Technologies utilisées pour la réalisation du projet:
 
@@ -117,6 +121,8 @@ Le modèle de la base de données doit être le même pour toutes les instances 
 Une solution envisageable serait de mettre en place un autre modèle qui reposerait sur une blockchain chiffrée; les informations dans une blockchain sont immuables, elles ne peuvent plus être modifiées une fois enregistrées dedans sauf si une majorité des noeuds décident de les modifier. Cela resoudrait le fait que les informations dans une base de données traditionnelles puissent être modifiable après enregistrement. De plus, chaque noeud et donc instances/serveurs, possedra une copie de cette blockchain ce qui le rend indépendant d'un serveur central de base données, ainsi, en cas de problèmes sur le réseau, chaque serveur pourra continuer de fonctionner.
 
 Le choix d'une base de données traditionnelle a été fait dû à une contrainte de temps, la nature du projet nous imposait de rendre un prototype de solution en 48h ce qui rend compliqué la mise en place d'une blockchain valide.
+
+Une autre amélioration serait de chiffrer les communications entres API.
 
 ## Réflexion IA&DATA:
 
