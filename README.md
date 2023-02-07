@@ -52,3 +52,22 @@ MLD de la base de données:
 ![](/image/logo.svg)
 ![](/image/CSS3_logo_and_wordmark.svg.png)
 ![](/image/732212.png)
+
+## Réflexion IA&DATA:
+
+L'une des questions qui peut émerger est : Comment proposer des suggestions d'achat fédérées aux utilisateurs enregistrés en fonctions de leurs commandes déjà passées ?
+
+2 algorithmes envisageables :
+* Système basé sur le contenu : celui-ci se base sur les achats précédents de l'utilisateur pour lui proposer des articles similaires
+* Système de type filtrage collaboratif : celui-là propose à l'utilisateur des articles achetés par d'autres utilisateurs similaires (ayant déjà acheté les mêmes articles) 
+![image](/image/IA.png)
+
+Le premier est le plus facile à implémenter (et nécessite peu de données au départ) et les résultats seront facilement interprétables. Quelques étapes sont à respecter pour l'implémenter :
+* Création d'un profil élément pour chaque article : description de l'article à l'aide de différentes caractéristiques (autrement dit création d'une liste de tags)
+* Calcul de similarité entre un article déjà acheté et un nouvel article
+* Proposition du nouvel article si la similarité dépasse un seuil (fixé au préalable)
+
+La première étape nécessite de demander au commerçant de rentrer des tags lors de l'ajout d'un article à son catalogue, par exemple le type d'article, sa couleur, domaine d'utilisation etc. Ces données seront ensuite ajoutées à la table 'Article' de la base de données. Il faudra également traiter et nettoyer ces données pour les homogénéiser, par exemple tous les accents pourront être supprimés, de même pour les majuscules.
+Ensuite chaque produit devra être encodé dans une représentation numérique par une technique de vectorisation. La plus utilisée dans le traitement de documents est la TF-IDF (Term Frequency-Inverse Document Frequency). Cette méthode permet de générer une matrice 2D où les lignes représentent les articles et les colonnes représentent les tags associés. 
+Le calcul de similarité entre les articles pourra alors prendre en entrée les lignes de cette matrice. La similarité cosinus pourra être utilisée. Il s'agit du produit scalaire entre deux vecteurs divisé par le produit de leurs normes. Le résultat est donc compris dans l'intervalle [-1;1], -1 indique deux vecteurs opposés et 1 indique deux vecteurs colinéaires donc avec une forte similarité.
+
