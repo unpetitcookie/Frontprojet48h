@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Header from './Header';
 const Bag = () => {
     let finalPrice = 0
 
@@ -17,6 +18,7 @@ const Bag = () => {
 
     return (
         <div>
+            <Header></Header>
             <h1>Mon Panier</h1>
             <table id="panier">
                 <tr>
