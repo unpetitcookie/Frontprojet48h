@@ -33,7 +33,7 @@ a{
 a:hover{
     color: blue;
 }
-input[type="text"]{
+#search-header{
     width: 190px;
     height: 30px;
     border: none;

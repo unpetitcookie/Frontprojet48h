@@ -17,7 +17,7 @@ const Login = () => {
       </a>
       <div id="formContainer-login">
         <h2>Se connecter</h2>
-        <form id="formulaire" onSubmit={(event) => loguser(event)}>
+        <form id="formulaire-login" onSubmit={(event) => loguser(event)}>
           <label id="label-login" for="Email">Email</label>
           <input
             required
@@ -37,8 +37,7 @@ const Login = () => {
             value={mdp}
             onChange={(e) => setmdp(e.target.value)}/><br />
             <a id="forgot-mdp-login" href="">Mot de passe oublié ?</a>
-            {/* si on a deja un compte */}
-            <a id="create-account-login" href="/register">Créer un compte</a>
+            <a id="create-account-login" href="/signup">Créer un compte</a>
           <input type="submit" value="Log In" id="button-login" required />
         </form>
       </div>

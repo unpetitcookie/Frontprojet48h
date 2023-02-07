@@ -16,7 +16,7 @@ class Header extends React.Component {
                         <a class="active" href="/addproduct">Ajouter un produit</a>
                         <a class="active" href="/admin">Admin</a>
                         <form>
-                            <input type="text" name="search" placeholder="Search.." />
+                            <input id="search-header" type="text" name="search" placeholder="Search.." />
                         </form>
                         <a class="login" href="/login">
                             <img src={perso} />
