@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import Addproduct from './pages/Addproduct';
+import Addproduct from './pages/AddProduct';
 import Admin from './pages/Admin';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
