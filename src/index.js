@@ -9,6 +9,7 @@ import Signup from './pages/Signup';
 import AddProduct from './pages/AddProduct.js';
 import Bag from './pages/Bag.js';
 import Admin from './pages/Admin';
+import { Commande } from './pages/Commandes.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,8 +22,9 @@ root.render(
         <Route element={<AddProduct />} path='/addProduct' />
         <Route element={<Bag />} path='/bag' />
         <Route element={<Admin />} path="/admin" />
-      </Routes >
-    </BrowserRouter >
+        <Route element={<Commande />} path="/commande" />
+      </Routes>
+    </BrowserRouter>
 
   </React.StrictMode >
 );
