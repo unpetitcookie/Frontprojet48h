@@ -82,7 +82,7 @@ Lorsqu'un client fera la recherche d'un produit qui ne se trouve pas dans les bo
 Il faudra mettre en place un algorithme qui puisse déterminer si une majorité des instances est d'accord pour modifier l'état du réseau.
 C'est cet algorithme qui va faire appelle aux instances du réseau pour déterminer si une nouvelle instance peut se connecter au réseau et quel id on va lui attribuer. 
 
-Toutes les instances vont calculer un nouvel id, selon une formule spécifique et en prenant en compte les id déjà présents dans leur base de données, une fois qu'une majorité d'instances est d'accord sur l'id, il sera transmis à la nouvelle instance qui le gardera en mémoire dans un ficher. Les instances vont dans leur table `ipAdresse` ajouter le nouvel id du nouveau serveur ainsi que sont adresse réseau. 
+Toutes les instances vont calculer un nouvel id, selon une formule spécifique et en prenant en compte les id déjà présents dans leur base de données, une fois qu'une majorité d'instances est d'accord sur l'id, il sera transmis à la nouvelle instance qui le chiffrera et le gardera en mémoire dans un ficher. Les instances vont dans leur table `ipAdresse` ajouter le nouvel id du nouveau serveur ainsi que sont adresse réseau. 
 
 Elles vont ensuites communiquer à la nouvelle instance leur propre id et leur propre adresse réseau pour que le nouveau serveur puisse remplir sa table de toutes les instances du réseau.
 <br><br>
