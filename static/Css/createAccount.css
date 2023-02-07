@@ -45,3 +45,9 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+
+img{
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 18%;
+}

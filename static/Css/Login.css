@@ -1,0 +1,71 @@
+html{
+    background-image: url("/login-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#formContainer{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.203);
+    border-radius: 12px;
+    padding: 2% 10% 5% 10%;
+}
+
+#formContainer input{
+    display: flex;
+    width: 10rem;
+    border-radius: 12px;
+    height: 1.5rem;
+    border: 0;
+}
+#formContainer input[type="submit"]{
+   margin-top: 7%;
+}
+
+#formContainer input[type="submit"]:hover{
+    transform: scale(1.1);
+    background-color: blue;
+}
+#formContainer h2{
+    display: flex;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+#formContainer button{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 5rem;
+    border-radius: 8px;
+}
+
+#formContainer form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#button{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 5rem;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 736px){
+    
+    #formContainer h2 {
+        padding-bottom: 2rem;
+        font-size: 25px;
+    }
+}
