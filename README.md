@@ -37,8 +37,6 @@
 Chaque instance du réseau sera une image Docker que le marchand devra télécharger puis lancer avec Docker. Dans cette image il y aura une API ainsi qu'une base de données. Une instance pourra contenir une ou plusieurs boutiques.
 L'administrateur de l'instance en rentrant ses identifiants aura accès à une panneau d'administration dans lequel il pourra séléctionner quelles instances ils souhaites rendre visible sur la sienne.
 
-l'API sera en charge de l'interconnexion entre les différentes instances. Lorsqu'un client fera la recherche d'un produit qui ne se trouve pas dans les boutiques de l'instance actuelle, l'API enverra de manière récursive les informations utilisateur ainsi que sa recherche aux autres API des autres instances qui vont chercher dans leur base de données si le produit recherché s'y trouve.
-
 * Site Web:
 
 Un site web servira d'interface graphique pour les clients, les marchands et l'administrateur du serveur.
@@ -65,12 +63,18 @@ Toutes les instances du réseau auront le même MLD ce qui facilitera l'intercon
 
 * Une table `Bag` qui reprèsente les paniers clients.
 
-* Une table `ipAdress` qui servira à stocker les adresses ip des autres API.
+* Une table `ipAdress` qui servira à stocker les adresses ip des autres API ainsi que l'id de la base de données.
 
 * Enfin, une table `Article` pour contenir les informations des produits.
 
 MLD de la base de données:
 ![](/image/Screenshot%20from%202023-02-07%2016-50-13.png)
+
+* API:
+
+l'API sera en charge de l'interconnexion entre les différentes instances et va utiliser le protocole http pour communiquer avec les autres API du réseau.
+
+Lorsqu'un client fera la recherche d'un produit qui ne se trouve pas dans les boutiques de l'instance actuelle, l'API, en s'appuyant sur la table `ipAdresse`, enverra les informations utilisateur ainsi que sa recherche aux autres API des autres instances qui vont chercher dans leur base de données si le produit recherché s'y trouve.
 
 ## Technologies utilisées pour la réalisation du projet:
 
