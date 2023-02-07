@@ -11,6 +11,7 @@
 ## Solutions:
 * Un réseau de serveurs (instances) décentralisé (qui ne dépendent pas d’une entité centrale)
 * Chaque serveur pourra accueillir plusieurs commerçants
+* Chaque serveur aura un id qui permettra de l'identifier sur le réseau
 * Possibilité de trouver les produits de tous les sites marchands du serveur ainsi que ceux des autres sites des serveurs connectés à l'instance actuelle. Les produits des serveurs connectés à ces autres serveurs seront aussi accessibles.
 * Conserver la communication entre les différentes instances malgrès leurs règles différentes
 * Le premier marchand d'une instance sera désigné comme étant l'administateur du serveur
@@ -76,6 +77,11 @@ l'API sera en charge de l'interconnexion entre les différentes instances et va 
 
 Lorsqu'un client fera la recherche d'un produit qui ne se trouve pas dans les boutiques de l'instance actuelle, l'API, en s'appuyant sur la table `ipAdresse`, enverra les informations utilisateur ainsi que sa recherche aux autres API des autres instances qui vont chercher dans leur base de données si le produit recherché s'y trouve.
 
+* Algorithme de consensus:
+
+Il faudra mettre en place un algorithme qui puisse déterminer si une majorité des instances est d'accord pour modifier l'état du réseau.
+C'est à cette algorithme qu'on va faire appelle pour déterminer si une instance peut se connecter au réseau et quel id on va lui attribuer.
+
 ## Technologies utilisées pour la réalisation du projet:
 
 ![](/image/js-logo.png)
@@ -102,14 +108,15 @@ Lorsqu'un client fera la recherche d'un produit qui ne se trouve pas dans les bo
 
 * ## Déploiement des instances
 
+## Limitation de cette solution
+
+Le modèle de la base de données doit être le même pour toutes les instances pour garantir l'intégrité des informations. Cette contrainte est dû au fait qu'un utilisateur qui crée un compte sur une instance, puisse utiliser ce même compte sur les autres serveurs du réseau.
+
 ## Amélioration possible:
 
 Une solution envisageable serait de mettre en place un autre modèle qui reposerait sur une blockchain chiffrée; les informations dans une blockchain sont immuables, elles ne peuvent plus être modifiées une fois enregistrées dedans sauf si une majorité des noeuds décident de les modifier. Cela resoudrait le fait que les informations dans une base de données traditionnelles puissent être modifiable après enregistrement. De plus, chaque noeud et donc instances/serveurs, possedra une copie de cette blockchain ce qui le rend indépendant d'un serveur central de base données, ainsi, en cas de problèmes sur le réseau, chaque serveur pourra continuer de fonctionner.
 
 Le choix d'une base de données traditionnelle a été fait dû à une contrainte de temps, la nature du projet nous imposait de rendre un prototype de solution en 48h ce qui rend compliqué la mise en place d'une blockchain valide.
-
-## Organisation du projet:
-![](/image/Screenshot%20from%202023-02-06%2011-21-39.png)
 
 ## Réflexion IA&DATA:
 
@@ -128,3 +135,6 @@ Le premier est le plus facile à implémenter (et nécessite peu de données au 
 La première étape nécessite de demander au commerçant de rentrer des tags lors de l'ajout d'un article à son catalogue, par exemple le type d'article, sa couleur, domaine d'utilisation etc. Ces données seront ensuite ajoutées à la table 'Article' de la base de données. Il faudra également traiter et nettoyer ces données pour les homogénéiser, par exemple tous les accents pourront être supprimés, de même pour les majuscules.
 Ensuite chaque produit devra être encodé dans une représentation numérique par une technique de vectorisation. La plus utilisée dans le traitement de documents est la TF-IDF (Term Frequency-Inverse Document Frequency). Cette méthode permet de générer une matrice 2D où les lignes représentent les articles et les colonnes représentent les tags associés. 
 Le calcul de similarité entre les articles pourra alors prendre en entrée les lignes de cette matrice. La similarité cosinus pourra être utilisée. Il s'agit du produit scalaire entre deux vecteurs divisé par le produit de leurs normes. Le résultat est donc compris dans l'intervalle [-1;1], -1 indique deux vecteurs opposés et 1 indique deux vecteurs colinéaires donc avec une forte similarité.
+
+## Organisation du projet:
+![](/image/Screenshot%20from%202023-02-06%2011-21-39.png)
