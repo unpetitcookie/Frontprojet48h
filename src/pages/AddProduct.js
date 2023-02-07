@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import '../styles/AddProduct.css'
+import Header from './Header.js';
 
 const AddProduct = () => {
     const [allImages, setImage] = useState([]);
@@ -33,18 +34,21 @@ const AddProduct = () => {
     */
     return (
         <div>
-            <form id="formulaire" onSubmit={(e) => addProduct(e)}>
+            <Header />
+            <div id="formContainer">
                 <h2>Ajouter un nouveau produit</h2>
-                <form method="post" id="formulaire" />
-                <label for="nameProduct">Nom du produit</label>
-                <input value={nameProduct} onChange={(e) => setNameProduct(e.target.value)} type="text" id="nameProduct"></input><br />
-                <label for="Description">Description</label>
-                <input value={description} onChange={(e) => setDescription(e.target.value)} type="text" id="Description"></input><br />
-                <label for="Images">Insérez des images du produit</label>
-                <input type="file" id="Images" accept="image/jpeg, image/png, image/jpg" multiple="multiple"></input><br />
+                <form id="formulaire" onSubmit={(e) => addProduct(e)}>
+                    <h2>Ajouter un nouveau produit</h2>
+                    <form method="post" id="formulaire" />
+                    <label for="nameProduct">Nom du produit</label>
+                    <input value={nameProduct} onChange={(e) => setNameProduct(e.target.value)} type="text" id="nameProduct"></input><br />
+                    <label for="Description">Description</label>
+                    <input value={description} onChange={(e) => setDescription(e.target.value)} type="text" id="Description"></input><br />
+                    <label for="Images">Insérez des images du produit</label>
+                    <input type="file" id="Images" accept="image/jpeg, image/png, image/jpg" multiple="multiple"></input><br />
 
 
-                {/* <output>
+                    {/* <output>
             { allImages.forEach((img, index) => {
             console.log("map :", {img, index});
             return <>
@@ -56,16 +60,17 @@ const AddProduct = () => {
             })
             }
             </output> */}
-                <label for="Price">Prix</label>
-                <input value={price} onChange={(e) => setPrice(e.target.value)} type="text" id="Price"></input><br />
-                <label for="Type">Type</label>
-                <input value={type} onChange={(e) => setType(e.target.value)} type="text" id="Type"></input><br />
-                <label for="Tags">Tags</label>
-                <input value={tag} onChange={(e) => setTag(e.target.value)} type="text" id="Tags"></input><br />
-                <input type="submit" value="Soumettre" id="button" />
-            </form>
-        </div >
-    );
+                    <label for="Price">Prix</label>
+                    <input value={price} onChange={(e) => setPrice(e.target.value)} type="text" id="Price"></input><br />
+                    <label for="Type">Type</label>
+                    <input value={type} onChange={(e) => setType(e.target.value)} type="text" id="Type"></input><br />
+                    <label for="Tags">Tags</label>
+                    <input value={tag} onChange={(e) => setTag(e.target.value)} type="text" id="Tags"></input><br />
+                    <input type="submit" value="Soumettre" id="button" />
+                </form>
+            </div>
+        </div>
+    )
 }
 export default AddProduct;
 {/*  
