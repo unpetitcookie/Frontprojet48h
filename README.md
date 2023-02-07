@@ -145,4 +145,4 @@ Le calcul de similarité entre les articles pourra alors prendre en entrée les 
 Le site pourra alors afficher quelques articles basés sur l'historique des commandes passées par l'utilisateur.
 
 ## Organisation du projet:
-![](/image/Screenshot%20from%202023-02-07%2022-11-49.png)
+![](/image/Screenshot%20from%202023-02-07%2022-26-29.png)
