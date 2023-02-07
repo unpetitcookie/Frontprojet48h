@@ -33,7 +33,6 @@
     * Passer commande chez les commerçants des autres instances connectées à cette instance; le paiement aura lieu sur l'autre instance mais une nouvelle inscription ne sera pas nécessaire.
 
 ## Mise en place:
-Un site web servira d'interface graphique pour les clients, les marchands et l'administrateur du serveur.
 
 Chaque instance du réseau sera une image Docker que le marchand devra télécharger puis lancer avec Docker. Dans cette image il y aura une API ainsi qu'une base de données. Une instance pourra contenir une ou plusieurs boutiques.
 L'administrateur de l'instance en rentrant ses identifiants aura accès à une panneau d'administration dans lequel il pourra séléctionner quelles instances ils souhaites rendre visible sur la sienne.
@@ -41,7 +40,7 @@ L'administrateur de l'instance en rentrant ses identifiants aura accès à une p
 l'API sera en charge de l'interconnexion entre les différentes instances. Lorsqu'un client fera la recherche d'un produit qui ne se trouve pas dans les boutiques de l'instance actuelle, l'API enverra de manière récursive les informations utilisateur ainsi que sa recherche aux autres API des autres instances qui vont chercher dans leur base de données si le produit recherché s'y trouve.
 
 * Site Web:
-
+Un site web servira d'interface graphique pour les clients, les marchands et l'administrateur du serveur.
 Pour la partie Frontend du site web, elle sera faite à l’aide des langages Html et Css.
 La partie Backend est en JavaScript.
 Le site web sera composé d’une page d'accueil où seront affichés les différents produits des boutiques.
@@ -56,6 +55,12 @@ Une page d’administration:
 ![](/image/Screenshot%20from%202023-02-06%2015-39-13.png)
 
 * Base de Données:
+
+Toutes les instances du réseau auront le même MLD ce qui facilitera l'interconnexion.
+Une table `Shop` qui contiendra des informations sur les boutiques hébergées par le serveur. Cela permettra aux API de se transmettre quelles boutiques sont disponibles sur leur instance.
+Une table `User` dans laquelle sera enregistrées toutes les information de l'utilisateurs dont ses identifiant.
+une table `Bag` qui reprèsente les panier clients.
+Enfin, une table `Article` pour contenir les informations des produits. 
 
 MLD de la base de données:
 ![](/image/drawSQL-chall48h-export-2023-02-073.png)
